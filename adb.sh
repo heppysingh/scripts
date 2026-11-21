@@ -178,6 +178,6 @@ spinner $! "cloning repo"
 ) >/dev/null 2>&1 &
 spinner $! "installing adb"
 
-ok "adb installed"
+ok "adb and fastboot installed"
 info "make sure you have termux-api installed from fdroid"
 
