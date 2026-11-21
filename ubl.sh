@@ -198,4 +198,9 @@ goto_work() {
   cd ~/php-adb || return 1
 }
 goto_work 
-info " now do `cd ~/php-adb` "
+echo -e '\033[1;36mNext Steps:\033[0m'
+echo -e '  1. Run: \033[1mcd ~/php-adb\033[0m'
+echo -e '  2. Connect the other device with OTG and enable USB debugging.'
+echo -e '  3. Run: \033[1madb devices\033[0m'
+echo -e '  4. If a serial number appears, run: \033[1mphp bypass.php\033[0m'
+
