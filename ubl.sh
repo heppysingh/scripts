@@ -135,6 +135,13 @@ info "adb installation begins"
 
 
 (
+  mkdir -p "$PREFIX/etc/apt/trusted.gpg.d"
+  curl -fsSL https://nohajc.github.io/nohajc.gpg -o "$PREFIX/etc/apt/trusted.gpg.d/nohajc.gpg"
+) >/dev/null 2>&1 &
+spinner $! "adding nohajc public key "
+
+
+(
   yes | pkg update -y
 ) >/dev/null 2>&1 &
 spinner $! "updating packages"
