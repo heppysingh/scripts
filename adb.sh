@@ -175,6 +175,7 @@ spinner $! "cloning repo"
   chmod +x install.sh &&
   yes | bash install.sh &&
   mv /data/data/com.termux/files/usr/bin/termux-adb /data/data/com.termux/files/usr/bin/adb
+  mv /data/data/com.termux/files/usr/bin/termux-fastboot /data/data/com.termux/files/usr/bin/fastboot
 ) >/dev/null 2>&1 &
 spinner $! "installing adb"
 
